@@ -1,0 +1,166 @@
+/* Generic Styles */ 
+$primary-color: #1d7ad9;
+.comWidth {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.leftArea {
+	float: left;
+}
+.rightArea {
+	float: right;
+}
+
+/* topBar */
+.topBar {
+	height: 31px;
+	background-color: #f7f7f7;
+	line-height: 31px;
+	a:hover {
+		color: $primary-color;
+	}
+}
+.collection {
+	background: url(../images/icons/collection.png) left center no-repeat;
+	padding-left: 19px;
+	font-weight: bold;
+}
+
+/* logoBar */
+.logoBar {
+	height: 85px;
+	background-color: $primary-color;
+}
+.logo {
+	padding-left: 41px;
+	padding-top: 13px;
+}
+.search_box {
+	width: 430px;
+	padding-top: 23px;
+	padding-left: 185px;
+}
+.search_text {
+	width: 350px;
+	height: 35px;
+	line-height: 35px\9;/*css hack \9表示兼容所有IE浏览器*/
+	padding: 0 5px;
+}
+.search_btn {
+	width: 70px;
+	height: 35px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei","微软雅黑";
+	background-color: #ff8c00;
+	color: #FFF;
+}
+
+/*shopping cart*/ 
+.shopCar {
+	width: 145px;
+	height: 35px;
+	background-color: #ff8c00;
+	color: #FFF;
+	margin-top: 23px;
+	margin-right: 59px;
+	font-size: 14px;
+	font-family:"Microsoft YaHei","微软雅黑" ;
+	line-height: 35px;
+}
+.shopText {
+	width: 89px;
+	height: 100%;
+	border-right: 1px solid #e27a00;
+	background: url(../images/icons/cart.png) 10px center no-repeat;
+	text-indent: 40px;
+}
+.shopNum {
+	width: 25px;
+	height: 35px;
+	border-left: 1px solid #ff9c01;
+	background: url(../images/icons/arrow.png) 33px center no-repeat;
+	text-align: right;
+	padding-right: 29px;
+}
+
+/*navigation*/ 
+.navBox {
+	width: 100%;
+	height: 35px;
+	background-color: #1369c0;
+	color: #FFF;
+}
+.shopClass {
+	width: 190px;
+	font-family:"Microsoft YaHei","微软雅黑" ;
+	position: relative;
+	h3 {
+		line-height: 35px;
+		text-align: center;
+	}
+	i {
+		display: inline-block;
+		width: 11px;
+		height: 7px;
+		overflow: hidden;
+		background: url(../images/icons/pulldown-arrow.png) left center no-repeat;
+		margin-left: 11px;
+	}
+}
+.nav {
+	line-height: 35px;
+	font-family:"Microsoft YaHei","微软雅黑" ;
+	li {
+		float: left;
+	}
+	a {
+		display: inline-block;
+		height: 35px;
+		color: #FFF;
+		padding: 0 35px;
+	}
+	.active {
+		background-color: #4593fd;
+	}
+}
+
+/*commodity pop-up list*/ 
+.shopClass_show {
+	background-color: #4593fd;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	width: 100%;
+}
+.shopClass_item {
+	padding: 15px 10px;
+	font-size: 13px;
+	border-bottom: 1px solid #3487f2;
+	border-top: 1px solid #5aa1f1;
+	dt {
+		height: 22px;
+		background: url(../images/icons/shop_arrow.png) right center no-repeat;
+	}
+	.bold {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	a {
+		color: #FFF;
+	}
+	dd a {
+		color: #c2d9f8;
+	}
+	.alink {
+		width: 48px;
+		height: 20px;
+		background: url(../images/icons/alink_bg.png) left center no-repeat;
+		display: inline-block;
+		line-height: 20px;
+		text-align: center;
+	}
+	.alink_line {
+		text-decoration: underline;
+	}
+}
