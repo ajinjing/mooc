@@ -377,7 +377,8 @@
 /*classify products*/
 .products_nav {
   overflow: hidden;
-  margin-top: 15px; }
+  margin-top: 15px;
+  border-bottom: 1px solid #d9d9d9; }
   .products_nav .leftArea {
     width: 185px; }
   .products_nav .rightArea {
@@ -404,13 +405,21 @@
       font-weight: bold;
       height: 30px;
       line-height: 30px; }
-    .leftNav .nav_cont .navcont_list {
-      overflow: hidden;
-      line-height: 20px;
-      font-size: 12px; }
-      .leftNav .nav_cont .navcont_list li {
-        float: left;
-        width: 50%; }
+
+.navcont_list {
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 12px; }
+  .navcont_list li {
+    float: left;
+    width: 50%; }
+  .navcont_list a:hover {
+    text-decoration: underline; }
+
+.vertical li {
+  float: none;
+  width: auto;
+  padding-left: 8px; }
 
 .products_title {
   margin-top: 7px;
@@ -426,9 +435,10 @@
 
 .products_list {
   overflow: hidden;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-left: 1%; }
   .products_list .item {
-    width: 172px;
+    width: 21%;
     float: left;
     padding: 0 15px; }
   .products_list .img_item {
@@ -453,5 +463,181 @@
     font-weight: bold;
     color: #d4105a;
     padding-top: 10px; }
+
+/*sift page*/
+.screening_box {
+  overflow: hidden;
+  font-size: 12px;
+  margin-left: 10px; }
+
+.screening {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  font-family: Verdana; }
+  .screening dt {
+    width: 79px;
+    line-height: 32px;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 35px; }
+  .screening .unlimited {
+    width: 55px;
+    float: left;
+    line-height: 32px; }
+  .screening .active {
+    background-color: #1d7ad9;
+    color: #FFF; }
+  .screening a {
+    color: #1D7AD9;
+    padding: 2px; }
+    .screening a:hover {
+      text-decoration: underline; }
+  .screening .screening_list {
+    overflow: hidden;
+    width: 500px;
+    line-height: 32px; }
+    .screening .screening_list li {
+      float: left;
+      width: 25%; }
+    .screening .screening_list li:last-child {
+      width: auto; }
+  .screening .screening_more {
+    line-height: 32px; }
+    .screening .screening_more a {
+      display: inline-block;
+      width: 120px;
+      color: #333;
+      float: right;
+      padding: 0; }
+    .screening .screening_more img {
+      top: 3px;
+      position: relative; }
+  .screening .more_select {
+    padding: 5px 10px 5px 0; }
+    .screening .more_select li {
+      width: auto;
+      height: 20px;
+      line-height: 20px;
+      border: 1px solid #dcdcdc;
+      margin-right: 10px; }
+    .screening .more_select a {
+      color: #333; }
+    .screening .more_select img {
+      top: 3px;
+      position: relative; }
+
+/*address info*/
+.address {
+  margin: 15px 0 15px 10px;
+  height: 31px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  font-size: 14px; }
+
+.address_info {
+  float: left; }
+  .address_info .address_text {
+    float: left;
+    line-height: 31px;
+    padding-left: 12px;
+    padding-right: 6px; }
+  .address_info .select {
+    margin-top: 4px; }
+
+.select {
+  float: left;
+  border: 1px solid #999;
+  height: 20px;
+  line-height: 20px;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 2; }
+  .select span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: url(../images/icons/blue_arrow.png) center center no-repeat; }
+  .select .show_select {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -1px;
+    background-color: #FFF;
+    width: 100%;
+    border: 1px solid #999; }
+    .select .show_select li {
+      padding-left: 10px; }
+
+.screening_text {
+  float: right;
+  line-height: 31px;
+  padding-right: 80px; }
+  .screening_text .check {
+    float: left;
+    padding-right: 10px; }
+    .screening_text .check input, .screening_text .check label {
+      vertical-align: middle; }
+  .screening_text .shop_number {
+    float: left; }
+    .screening_text .shop_number em {
+      color: #f00;
+      font-weight: bold; }
+
+.screening_list_more {
+  padding-left: 0.5%; }
+  .screening_list_more .item {
+    width: 29.5%; }
+  .screening_list_more .address_cart {
+    background-color: #FFF;
+    color: #3879bd;
+    border: 1px solid #c3d5e7;
+    height: 22px;
+    display: inline-block;
+    padding: 3px 6px 0 23px;
+    background: url(../images/icons/address_cart.png) 4px center no-repeat; }
+
+/*page*/
+.page {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px; }
+  .page a {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    padding: 0 12px;
+    margin: 0 2px; }
+  .page .hl {
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 2px; }
+  .page .morePage {
+    display: inline-block;
+    padding-left: 14px;
+    height: 24px;
+    line-height: 24px; }
+  .page .pageNum {
+    width: 29px;
+    padding: 0 3px;
+    border: 1px solid #ccc;
+    height: 24px;
+    line-height: 24px\9;
+    text-align: center; }
+  .page .page_btn {
+    width: 44px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    background-color: #e8e8e8;
+    box-sizing: content-box;
+    padding: 0;
+    margin-left: 6px; }
 
 /*# sourceMappingURL=default.css.map */
