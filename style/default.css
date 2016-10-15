@@ -100,13 +100,26 @@
     line-height: 35px;
     text-align: center;
     font-family: "Microsoft YaHei", "微软雅黑"; }
-  .shopClass i {
-    display: inline-block;
-    width: 11px;
+  .shopClass .shortcut {
+    top: 14px;
+    right: 20px;
     height: 7px;
     overflow: hidden;
-    background: url(../images/icons/pulldown-arrow.png) left center no-repeat;
-    margin-left: 11px; }
+    font-size: 14px;
+    line-height: 14px;
+    -webkit-transition: -webkit-transform 0.1s ease-in;
+    transition: -webkit-transform 0.1s ease-in;
+    transition: transform 0.1s ease-in;
+    transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in; }
+    .shopClass .shortcut s {
+      position: relative;
+      top: -7px;
+      text-decoration: none; }
+  .shopClass i.shortcut {
+    position: absolute; }
+  .shopClass:hover .shortcut {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
 .nav {
   line-height: 35px;
@@ -118,35 +131,32 @@
     height: 35px;
     color: #FFF;
     padding: 0 35px; }
-  .nav .active {
+  .nav li:hover {
     background-color: #4593fd; }
 
 /*commodity pop-up list*/
 .shopClass_show {
-  background-color: #4593fd;
   position: absolute;
   left: 0;
   top: 35px;
-  width: 100%;
-  padding-bottom: 6px; }
+  width: 100%; }
 
 .shopClass_item {
-  padding: 14px 10px;
+  padding: 14px 8px;
   font-size: 12px;
+  background-color: #4593fd;
   border-bottom: 1px solid #3487f2;
   border-top: 1px solid #5aa1f1; }
   .shopClass_item dt {
     height: 22px;
     background: url(../images/icons/shop_arrow.png) right center no-repeat; }
   .shopClass_item .bold {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold; }
   .shopClass_item a {
     color: #FFF; }
     .shopClass_item a:hover {
       text-decoration: underline; }
-  .shopClass_item dd a {
-    margin-right: 3px; }
   .shopClass_item .alink {
     width: 48px;
     height: 20px;
@@ -154,23 +164,48 @@
     display: inline-block;
     line-height: 20px;
     text-align: center; }
+  .shopClass_item:last-child {
+    margin-bottom: -1px;
+    padding-bottom: 20px; }
 
 /*shopClass_item active*/
-.shopClass_active {
+.shopClass_item:hover {
   background-color: #FFF;
-  border-left: 1px solid #4593fd; }
-  .shopClass_active a {
+  border-left: 1px solid #4593fd;
+  z-index: 1; }
+  .shopClass_item:hover dt {
+    background: none; }
+  .shopClass_item:hover a {
     color: #000; }
-  .shopClass_active .alink {
+  .shopClass_item:hover .shopList_links a {
     color: #FFF; }
+  .shopClass_item:hover .alink {
+    color: #FFF; }
+  .shopClass_item:hover .shopClass_list {
+    display: block; }
+  .shopClass_item:hover .blank {
+    display: inline-block;
+    width: 20px;
+    height: 62px;
+    background: #fff;
+    position: relative;
+    float: right;
+    top: -14px;
+    right: -10px;
+    z-index: 6; }
+  .shopClass_item:hover:last-child .blank {
+    height: 68px; }
 
 /*pop-up menu*/
 .shopClass_list {
+  display: none;
   width: 570px;
   position: absolute;
-  left: 190px;
-  top: 35px;
-  border: 1px solid #ccc; }
+  left: 189px;
+  top: 0;
+  border: 1px solid #4593fd;
+  background-color: #FFF;
+  z-index: 5; }
 
 .shopClass_cont {
   padding: 10px 20px; }
