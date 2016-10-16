@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>mooc home page</title>
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/default.css">
@@ -21,7 +22,7 @@
 		<div class="logoBar">
 			<div class="comWidth">
 				<div class="logo fl">
-					<a href="#"><img src="images/logo.png" alt="慕课网"></a>
+					<a href="index.html"><img src="images/logo.png" alt="慕课网"></a>
 				</div><!-- end logo -->
 				<div class="search_box fl">
 					<input type="text" class="search_text fl">
@@ -528,14 +529,17 @@
 		</div><!-- end navBar -->
 	</div><!-- end headerBar -->
 	<div class="banner comWidth">
-		<div class="banner_bar banner_big">
-			<ul class="imgBox">
+		<div class="banner_bar banner_big" id="banner_big">
+			<ul class="imgBox" id="imgBox_big">
 				<li><a href="#"><img src="images/banner/banner_01.jpg" alt="banner"></a></li>
 				<li><a href="#"><img src="images/banner/banner_02.jpg" alt="banner"></a></li>
+				<li><a href="#"><img src="images/banner/banner_03.jpg" alt="banner"></a></li>
+				<li><a href="#"><img src="images/banner/banner_01.jpg" alt="banner"></a></li>
 			</ul>	
-			<div class="imgNum">
-				<a href="#" class="active"></a>
-				<a href="#"></a>
+			<div class="imgNum" id="imgNum_big">
+				<span class="active_select">1</span>
+				<span>2</span>
+				<span>3</span>
 			</div>
 		</div>
 	</div><!-- end banner -->
@@ -546,14 +550,17 @@
 	</div><!-- end shopTitle -->
 	<div class="shopList comWidth">
 		<div class="leftArea">
-			<div class="banner_bar banner_small">
-				<ul class="imgBox">
+			<div class="banner_bar banner_small" id="banner_small">
+				<ul class="imgBox" id="imgBox_small">
+					<li><a href="#"><img src="images/banner/banner_sm_01.png" alt="banner"></a></li>
+					<li><a href="#"><img src="images/banner/banner_sm_02.png" alt="banner"></a></li>
+					<li><a href="#"><img src="images/banner/banner_sm_03.png" alt="banner"></a></li>
 					<li><a href="#"><img src="images/banner/banner_sm_01.png" alt="banner"></a></li>
 				</ul>	
-				<div class="imgNum">
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#" class="active"></a>
+				<div class="imgNum" id="imgNum_small">
+					<span class="active_select">1</span>
+					<span>2</span>
+					<span>3</span>
 				</div>
 			</div>
 		</div>
@@ -563,28 +570,28 @@
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_HTC.png" alt="HTC Phone"></a>
 					</div>
-					<h3>HTC新渴望8系列</h3>
+					<h3><a href="#">HTC新渴望8系列</a></h3>
 					<p>1899元</p>
 				</div>
 				<div class="shop_item">
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_HTC.png" alt="HTC Phone"></a>
 					</div>
-					<h3>HTC新渴望8系列</h3>
+					<h3><a href="#">HTC新渴望8系列</a></h3>
 					<p>1899元</p>
 				</div>				
 				<div class="shop_item">
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_HTC.png" alt="HTC Phone"></a>
 					</div>
-					<h3>HTC新渴望8系列</h3>
+					<h3><a href="#">HTC新渴望8系列</a></h3>
 					<p>1899元</p>
 				</div>				
 				<div class="shop_item">
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_HTC.png" alt="HTC Phone"></a>
 					</div>
-					<h3>HTC新渴望8系列</h3>
+					<h3><a href="#">HTC新渴望8系列</a></h3>
 					<p>1899元</p>
 				</div>
 			</div>
@@ -594,7 +601,7 @@
 						<a href="#"><img src="images/shopItem_sm_img01.png" alt="音响"></a>
 					</div>
 					<div class="shopItem_text">
-						<p class="active">NFC技术一碰轻松配对!接触屏幕</p>
+						<p class="active"><a href="#">NFC技术一碰轻松配对!接触屏幕</a></p>
 						<h3>&#65509;149.00</h3>
 					</div>
 				</div>
@@ -603,7 +610,7 @@
 						<a href="#"><img src="images/shopItem_sm_img02.png" alt="三星"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>Samsung三星GALAXY Grand2</p>
+						<p><a href="#">Samsung三星GALAXY Grand2</a></p>
 						<h3>&#65509;2000.00</h3>
 					</div>
 				</div>
@@ -612,7 +619,7 @@
 						<a href="#"><img src="images/shopItem_sm_img03.png" alt="iPad"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>全网低价 Apple苹果iPad mini1</p>
+						<p><a href="#">全网低价 Apple苹果iPad mini1</a></p>
 						<h3>&#65509;1888.00</h3>
 					</div>
 				</div>
@@ -621,7 +628,7 @@
 						<a href="#"><img src="images/shopItem_sm_img04.png" alt="苹果电脑"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>Apple苹果 全新Retina屏MacBook</p>
+						<p><a href="#">Apple苹果 全新Retina屏MacBook</a></p>
 						<h3>&#65509;20020.00</h3>
 					</div>
 				</div>
@@ -637,7 +644,7 @@
 		<div class="leftArea">
 			<div class="banner_bar banner_small">
 				<ul class="imgBox">
-					<li><a href="#"><img src="images/banner/banner_sm_02.png" alt="banner"></a></li>
+					<li><a href="#"><img src="images/banner/banner_sm_04.png" alt="banner"></a></li>
 				</ul>	
 			</div>
 		</div>
@@ -647,65 +654,65 @@
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_food.png" alt="food"></a>
 					</div>
-					<h3>三月美食狂享购</h3>
+					<h3><a href="#">三月美食狂享购</a></h3>
 					<p>50元</p>
 				</div>
 				<div class="shop_item">
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_food.png" alt="food"></a>
 					</div>
-					<h3>三月美食狂享购</h3>
+					<h3><a href="#">三月美食狂享购</a></h3>
 					<p>40元</p>
 				</div>
 				<div class="shop_item">
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_food.png" alt="food"></a>
 					</div>
-					<h3>三月美食狂享购</h3>
+					<h3><a href="#">三月美食狂享购</a></h3>
 					<p>20元</p>
 				</div>
 				<div class="shop_item">
 					<div class="shop_img">
 						<a href="#"><img src="images/shop_img_food.png" alt="food"></a>
 					</div>
-					<h3>三月美食狂享购</h3>
+					<h3><a href="#">三月美食狂享购</a></h3>
 					<p>80元</p>
 				</div>
 			</div>
 			<div class="shopList_small">
 				<div class="shopItem_sm">
 					<div class="shopItem_sm_img">
-						<a href="#"><img src="images/shopItem_sm_img05.png" alt="音响"></a>
+						<a href="#"><img src="images/shopItem_sm_img05.png" alt="康比特"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>康比特 维他保咀嚼片 60片</p>
+						<p><a href="#">康比特 维他保咀嚼片 60片</a></p>
 						<h3>&#65509;600.00</h3>
 					</div>
 				</div>
 				<div class="shopItem_sm">
 					<div class="shopItem_sm_img">
-						<a href="#"><img src="images/shopItem_sm_img05.png" alt="音响"></a>
+						<a href="#"><img src="images/shopItem_sm_img05.png" alt="康比特"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>康比特 维他保咀嚼片 60片</p>
+						<p><a href="#">康比特 维他保咀嚼片 60片</a></p>
 						<h3>&#65509;400.00</h3>
 					</div>
 				</div>
 				<div class="shopItem_sm">
 					<div class="shopItem_sm_img">
-						<a href="#"><img src="images/shopItem_sm_img05.png" alt="音响"></a>
+						<a href="#"><img src="images/shopItem_sm_img05.png" alt="康比特"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>康比特 维他保咀嚼片 60片</p>
+						<p><a href="#">康比特 维他保咀嚼片 60片</a></p>
 						<h3>&#65509;200.00</h3>
 					</div>
 				</div>
 				<div class="shopItem_sm">
 					<div class="shopItem_sm_img">
-						<a href="#"><img src="images/shopItem_sm_img05.png" alt="音响"></a>
+						<a href="#"><img src="images/shopItem_sm_img05.png" alt="康比特"></a>
 					</div>
 					<div class="shopItem_text">
-						<p>康比特 维他保咀嚼片 60片</p>
+						<p><a href="#">康比特 维他保咀嚼片 60片</a></p>
 						<h3>&#65509;100.00</h3>
 					</div>
 				</div>
@@ -729,4 +736,18 @@
 		</p>
 	</div><!-- end footer -->
 </body>
+<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		// 轮播图carousel
+		var banner_big = document.getElementById('banner_big');
+		var imgBox_big = document.getElementById('imgBox_big');
+		var spanlist_big = document.getElementById('imgNum_big').getElementsByTagName('span');
+		var banner_small = document.getElementById('banner_small');
+		var imgBox_small = document.getElementById('imgBox_small');
+		var spanlist_small = document.getElementById('imgNum_small').getElementsByTagName('span');
+		carousel(banner_big,imgBox_big,spanlist_big);
+		carousel(banner_small,imgBox_small,spanlist_small);
+	};
+</script>
 </html>

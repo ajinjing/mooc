@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>mooc classify products page</title>
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/default.css">
@@ -21,7 +22,7 @@
 		<div class="logoBar">
 			<div class="comWidth">
 				<div class="logo fl">
-					<a href="#"><img src="images/logo.png" alt="慕课网"></a>
+					<a href="index.html"><img src="images/logo.png" alt="慕课网"></a>
 				</div><!-- end logo -->
 				<div class="search_box fl">
 					<input type="text" class="search_text fl">
@@ -617,14 +618,17 @@
 			</div><!-- end leftNav -->
 		</div><!-- end leftArea -->
 		<div class="rightArea">
-			<div class="banner_bar banner_big">
-				<ul class="imgBox">
+			<div class="banner_bar banner_big" id="banner_big">
+				<ul class="imgBox" id="imgBox_big">
 					<li><a href="#"><img src="images/banner/banner_01.jpg" alt="banner"></a></li>
 					<li><a href="#"><img src="images/banner/banner_02.jpg" alt="banner"></a></li>
+					<li><a href="#"><img src="images/banner/banner_03.jpg" alt="banner"></a></li>
+					<li><a href="#"><img src="images/banner/banner_01.jpg" alt="banner"></a></li>
 				</ul>	
-				<div class="imgNum">
-					<a href="#" class="active"></a>
-					<a href="#"></a>
+				<div class="imgNum" id="imgNum_big">
+					<span class="active_select">1</span>
+					<span>2</span>
+					<span>3</span>
 				</div>
 			</div><!-- end banner_bar -->
 			<div class="products_title">
@@ -786,6 +790,7 @@
 </body>
 <script type="text/javascript" src="js/default.js"></script>
 <script type="text/javascript">
+	// 导航子菜单的显示和隐藏
 	window.onload = function(){
 		var shop = document.getElementById('shopClass');
 		var shopClass_show = shop.getElementsByTagName('div')[0];
@@ -795,6 +800,11 @@
 		shop.onmouseleave = function(){
 			addClass(shopClass_show,"hide");
 		};
+		// 轮播图carousel
+		var banner_big = document.getElementById('banner_big');
+		var imgBox_big = document.getElementById('imgBox_big');
+		var spanlist_big = document.getElementById('imgNum_big').getElementsByTagName('span');
+		carousel(banner_big,imgBox_big,spanlist_big);
 	};
 </script>
 </html>

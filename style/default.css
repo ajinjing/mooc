@@ -270,21 +270,23 @@
   left: 0;
   bottom: 15px;
   text-align: center; }
-  .imgNum a {
+  .imgNum span {
     width: 20px;
     height: 5px;
     display: inline-block;
     background-color: #fff;
     overflow: hidden;
-    margin: 0 2px; }
-  .imgNum .active {
+    margin: 0 2px;
+    color: transparent;
+    cursor: pointer; }
+  .imgNum .active_select {
     background-color: #ff7700; }
 
 .banner_big {
   width: 810px;
   height: 326px; }
   .banner_big .imgBox {
-    width: 1620px;
+    width: 3240px;
     height: 326px; }
     .banner_big .imgBox img {
       width: 810px;
@@ -294,7 +296,7 @@
   width: 190px;
   height: 400px; }
   .banner_small .imgBox {
-    width: 380px;
+    width: 760px;
     height: 400px; }
     .banner_small .imgBox img {
       width: 190px;
@@ -352,6 +354,10 @@
       height: 218px; }
     .shopList_top .shop_item h3 {
       font-size: 16px; }
+      .shopList_top .shop_item h3 a {
+        color: #000; }
+        .shopList_top .shop_item h3 a:hover {
+          text-decoration: underline; }
     .shopList_top .shop_item p {
       font-size: 14px;
       color: #ff7300;
@@ -377,8 +383,11 @@
       float: left;
       padding-top: 10px; }
       .shopList_small .shopItem_sm .shopItem_text p {
-        color: #000;
         font-size: 14px; }
+        .shopList_small .shopItem_sm .shopItem_text p a {
+          color: #000; }
+          .shopList_small .shopItem_sm .shopItem_text p a:hover {
+            text-decoration: underline; }
       .shopList_small .shopItem_sm .shopItem_text .active {
         color: #ff7300; }
       .shopList_small .shopItem_sm .shopItem_text h3 {
@@ -524,7 +533,7 @@
     background-color: #1d7ad9;
     color: #FFF; }
   .screening a {
-    color: #1D7AD9;
+    color: #1d7ad9;
     padding: 2px; }
     .screening a:hover {
       text-decoration: underline; }

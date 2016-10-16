@@ -1,5 +1,6 @@
 /* Generic Styles */ 
 $primary-color: #1d7ad9;
+$secondary-color: #4593fd;
 .comWidth {
 	width: 1000px;
 	margin-left: auto;
@@ -143,7 +144,7 @@ $primary-color: #1d7ad9;
 		padding: 0 35px;
 	}
 	li:hover {
-		background-color: #4593fd;
+		background-color: $secondary-color;
 	}
 }
 
@@ -157,7 +158,7 @@ $primary-color: #1d7ad9;
 .shopClass_item {
 	padding: 14px 8px;
 	font-size: 12px;
-	background-color: #4593fd;
+	background-color: $secondary-color;
 	border-bottom: 1px solid #3487f2;
 	border-top: 1px solid #5aa1f1;
 	dt {
@@ -191,7 +192,7 @@ $primary-color: #1d7ad9;
 /*shopClass_item active*/ 
 .shopClass_item:hover {
 	background-color: #FFF;
-	border-left: 1px solid #4593fd;
+	border-left: 1px solid $secondary-color;
 	z-index: 1;
 	dt {
 		background: none;
@@ -233,7 +234,7 @@ $primary-color: #1d7ad9;
 	position: absolute;
 	left: 189px;
 	top: 0;
-	border: 1px solid #4593fd;
+	border: 1px solid $secondary-color;
 	background-color: #FFF;
 	z-index: 5;
 }
@@ -308,15 +309,17 @@ $primary-color: #1d7ad9;
 	left: 0;
 	bottom: 15px;
 	text-align: center;
-	a {
+	span {
 		width: 20px;
 		height: 5px;
 		display: inline-block;
 		background-color: #fff;
 		overflow: hidden;
 		margin: 0 2px;
+		color: transparent;
+		cursor: pointer;
 	}
-	.active {
+	.active_select {
 		background-color: #ff7700;
 	}
 }
@@ -324,7 +327,7 @@ $primary-color: #1d7ad9;
 	width: 810px;
 	height: 326px;
 	.imgBox {
-		width: 1620px;
+		width: 3240px;
 		height: 326px;
 		img {
 			width: 810px;
@@ -336,7 +339,7 @@ $primary-color: #1d7ad9;
 	width: 190px;
 	height: 400px;
 	.imgBox {
-		width: 380px;
+		width: 760px;
 		height: 400px;
 		img {
 			width: 190px;
@@ -406,6 +409,12 @@ $primary-color: #1d7ad9;
 		}
 		h3 {
 			font-size: 16px;
+			a {
+				color: #000;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 		p {
 			font-size: 14px;
@@ -436,8 +445,13 @@ $primary-color: #1d7ad9;
 			float: left;
 			padding-top: 10px;
 			p {
-				color: #000;
 				font-size: 14px;
+				a {
+					color: #000;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 			}
 			.active {
 				color: #ff7300;
@@ -615,11 +629,11 @@ $primary-color: #1d7ad9;
 		line-height: 32px;
 	}
 	.active {
-		background-color: #1d7ad9;
+		background-color: $primary-color;
 		color: #FFF;
 	}
 	a {
-		color: #1D7AD9;
+		color: $primary-color;
 		padding: 2px;
 		&:hover {
 			text-decoration: underline;
