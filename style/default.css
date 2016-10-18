@@ -150,6 +150,9 @@
   .shopClass_item dt {
     height: 22px;
     background: url(../images/icons/shop_arrow.png) right center no-repeat; }
+  .shopClass_item .blank {
+    height: 0;
+    background: none; }
   .shopClass_item .bold {
     font-size: 13px;
     font-weight: bold; }

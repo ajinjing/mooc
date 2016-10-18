@@ -165,6 +165,10 @@ $secondary-color: #4593fd;
 		height: 22px;
 		background: url(../images/icons/shop_arrow.png) right center no-repeat;
 	}
+	.blank {
+		height: 0;
+		background: none;
+	}
 	.bold {
 		font-size: 13px;
 		font-weight: bold;
