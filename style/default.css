@@ -68,7 +68,7 @@
   margin-top: 23px;
   margin-right: 59px;
   font-size: 14px;
-  font-family: "Microsoft YaHei", "微软雅黑";
+  font-family: "Microsoft YaHei","微软雅黑";
   line-height: 35px; }
 
 .shopText {
@@ -99,7 +99,7 @@
   .shopClass h3 {
     line-height: 35px;
     text-align: center;
-    font-family: "Microsoft YaHei", "微软雅黑"; }
+    font-family: "Microsoft YaHei","微软雅黑"; }
   .shopClass .shortcut {
     top: 14px;
     right: 20px;
@@ -119,11 +119,11 @@
     position: absolute; }
   .shopClass:hover .shortcut {
     -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
+            transform: rotate(180deg); }
 
 .nav {
   line-height: 35px;
-  font-family: "Microsoft YaHei", "微软雅黑"; }
+  font-family: "Microsoft YaHei","微软雅黑"; }
   .nav li {
     float: left; }
   .nav a {
@@ -309,7 +309,7 @@
 .shopTitle {
   height: 44px;
   line-height: 44px;
-  font-family: "Microsoft YaHei", "微软雅黑";
+  font-family: "Microsoft YaHei","微软雅黑";
   margin-bottom: 15px; }
   .shopTitle h3 {
     font-size: 24px;
@@ -352,7 +352,7 @@
     border-right: 1px solid #999;
     border-bottom: 1px solid #999;
     text-align: center;
-    font-family: "Microsoft YaHei", "微软雅黑"; }
+    font-family: "Microsoft YaHei","微软雅黑"; }
     .shopList_top .shop_item .shop_img {
       height: 218px; }
     .shopList_top .shop_item h3 {
@@ -394,7 +394,7 @@
       .shopList_small .shopItem_sm .shopItem_text .active {
         color: #ff7300; }
       .shopList_small .shopItem_sm .shopItem_text h3 {
-        font-family: "Microsoft YaHei", "微软雅黑";
+        font-family: "Microsoft YaHei","微软雅黑";
         font-size: 16px;
         line-height: 30px;
         color: #181818; }
@@ -404,7 +404,7 @@
   margin-top: 40px;
   background-color: #d4d4d4;
   text-align: center;
-  font-family: "Microsoft YaHei", "微软雅黑";
+  font-family: "Microsoft YaHei","微软雅黑";
   font-size: 12px;
   line-height: 24px;
   padding: 50px 0; }
@@ -686,5 +686,3 @@
     box-sizing: content-box;
     padding: 0;
     margin-left: 6px; }
-
-/*# sourceMappingURL=default.css.map */
