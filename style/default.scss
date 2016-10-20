@@ -38,6 +38,7 @@ $secondary-color: #4593fd;
 .logoBar {
 	height: 85px;
 	background-color: $primary-color;
+	clear: both;
 }
 .logo {
 	padding-left: 41px;
@@ -176,7 +177,7 @@ $secondary-color: #4593fd;
 		}
 	}
 	.alink {
-		width: 48px;
+		width: 47px;
 		height: 20px;
 		background: url(../images/icons/alink_bg.png) left center no-repeat;
 		display: inline-block;
